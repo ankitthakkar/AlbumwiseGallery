@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/shape_white_bottom_line_black" >
+
+    <TextView
+        android:id="@+id/list_gallery_album_tv_albumname"
+        style="@style/setting_item"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_centerVertical="true"
+        android:layout_toLeftOf="@+id/list_gallery_album_ib_right_arrow"
+        android:background="@null"
+        android:drawableRight="@null"
+        android:ellipsize="end"
+        android:padding="10dp"
+        android:singleLine="true"
+        android:textColor="#FF000000"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/list_gallery_album_tv_count"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_gravity="right"
+        android:layout_marginRight="10dp"
+        android:layout_toLeftOf="@+id/list_gallery_album_ib_right_arrow"
+        android:singleLine="true"
+        android:textColor="#7a7a7a"
+        android:textSize="12sp" />
+
+    <ImageView
+        android:id="@+id/list_gallery_album_ib_right_arrow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:background="@android:color/transparent"
+        android:contentDescription="@null"
+        android:focusable="false"
+        android:padding="10dp"
+        android:src="@drawable/ic_forward" />
+
+</RelativeLayout>

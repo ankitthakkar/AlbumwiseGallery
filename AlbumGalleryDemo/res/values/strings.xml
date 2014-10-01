@@ -1,0 +1,8 @@
+<resources>
+
+    <string name="app_name">AlbumGalleryDemo</string>
+ <string name="btn_gallery_image">Image</string>
+    <string name="btn_gallery_video">Video</string>
+      <string name="empty"></string>
+    
+</resources>
