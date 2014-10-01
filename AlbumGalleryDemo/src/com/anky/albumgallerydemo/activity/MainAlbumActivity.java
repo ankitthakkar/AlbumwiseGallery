@@ -66,7 +66,7 @@ public class MainAlbumActivity extends Activity implements OnClickListener,
 		btnGalleryImage.setOnClickListener(this);
 		mGridView.setOnItemClickListener(null);
 		arrayListAlbums = new ArrayList<GalleryPhotoAlbum>();
-		getBrabblePhotoList();
+		getPhotoList();
 		
 		btnGalleryImage.setBackgroundColor(getResources().getColor(R.color.orange));
 		btnGalleryVideo.setBackgroundColor(getResources().getColor(R.color.blue));
@@ -76,7 +76,7 @@ public class MainAlbumActivity extends Activity implements OnClickListener,
 	/**
 	 * retrieve image album and set
 	 */
-	private void getBrabblePhotoList() {
+	private void getPhotoList() {
 
 		// which image properties are we querying
 		String[] PROJECTION_BUCKET = { ImageColumns.BUCKET_ID,
@@ -220,7 +220,7 @@ public class MainAlbumActivity extends Activity implements OnClickListener,
 	/**
 	 * retrieve video album list and set
 	 */
-	private void getBrabbleVideoList() {
+	private void getVideoList() {
 
 		// which image properties are we querying
 		String[] PROJECTION_BUCKET = { VideoColumns.BUCKET_ID,
@@ -325,7 +325,7 @@ public class MainAlbumActivity extends Activity implements OnClickListener,
 		switch (v.getId()) {
 		case R.id.fragment_create_gallery_btn_video:
 
-			getBrabbleVideoList();
+			getVideoList();
 			viewFlipperGallery.setDisplayedChild(0);
 			isImage = false;
 			btnGalleryVideo.setBackgroundColor(getResources().getColor(R.color.orange));
@@ -335,7 +335,7 @@ public class MainAlbumActivity extends Activity implements OnClickListener,
 
 		case R.id.fragment_create_gallery_btn_image:
 
-			getBrabblePhotoList();
+			getPhotoList();
 			viewFlipperGallery.setDisplayedChild(0);
 			isImage = true;
 			btnGalleryImage.setBackgroundColor(getResources().getColor(R.color.orange));
