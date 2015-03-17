@@ -1,1 +1,2 @@
 This is testing page.
+This is nice page
